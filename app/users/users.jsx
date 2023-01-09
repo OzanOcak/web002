@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { getUsers } from "../../lib/prisma/users";
 import SearchList from "../../components/SearchList";
 
