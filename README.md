@@ -30,6 +30,11 @@ yarn add @prisma/client
 npx plasma generate  // if schema is updated
 
 curl -X POST http://localhost:3000/api/users  -d {"email":"ozanocak@gmail.com","name":"Ozan Ocak","imageUrl":"https:github.com/OzanOcak.png"}
-
-
 ````
+
+```console
+npm run build
+```
+
+Now we can see server side rendered in run time and generated in build time pages
+By add _generateStaticParams_ build in method, we can turn dynamically rendered User component in page.jsx into statically generated page

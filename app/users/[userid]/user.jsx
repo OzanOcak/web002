@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const User = ({ user }) => {
-  // console.log(user);
+  //console.log(user);
   return (
     <section className="m-4 py-4">
       <div className="center">

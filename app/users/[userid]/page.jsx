@@ -1,5 +1,13 @@
-import { getUserById } from "../../../lib/prisma/users";
+import { getUserById, getUsers } from "../../../lib/prisma/users";
 import User from "./User";
+
+export async function generateStaticParams() {
+  const { users } = await getUsers();
+
+  return users.map((user) => ({
+    userid: user.id,
+  }));
+}
 
 const Page = async ({ params }) => {
   //console.log(params);
