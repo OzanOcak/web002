@@ -38,3 +38,11 @@ npm run build
 
 Now we can see server side rendered in run time and generated in build time pages
 By add _generateStaticParams_ build in method, we can turn dynamically rendered User component in page.jsx into statically generated page
+
+---
+
+when we add new database feature , we need to update _schema.prisma_ than run _npx prisma generate_
+
+- our http request will be routed and responded by handler function in api
+- api also will call functions located in lib/prisma which is called as controller
+- finally the data will be fetched prisma functions and react components under app folder will be rendered
